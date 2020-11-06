@@ -5,8 +5,7 @@ import debounce from 'lodash.debounce';
 const input = document.getElementById('searchInput');
 
 input.addEventListener('input', debounce((e) => {
-  fetchCountries(e.target.value)
-  input.value = '';
+  fetchCountries(e.target.value);
 }, 700))
 
 
